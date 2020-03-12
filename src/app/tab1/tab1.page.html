@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      An App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+      <img src="/assets/shapes.svg" alt="" />
+      <ion-card-header>
+        <ion-card-subtitle>Get Started</ion-card-subtitle>
+        <ion-card-title>Welcome to Ionic</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
+      </ion-card-content>
+    </ion-card>
+    <div >
+      <ion-item>
+        <ion-label>Default Label</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-input type="text" [(ngModel)]="userdata.unm" placeholder="Username"></ion-input>
+      <ion-input type="password" [(ngModel)]="userdata.pwd" placeholder="Password"></ion-input>
+      <ion-button (click)="login()">Login</ion-button>
+      <ion-button>Cancel</ion-button>
+    </div>
+</ion-content>
